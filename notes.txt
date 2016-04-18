@@ -1,0 +1,22 @@
+# DL H2O
+# unzip
+
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa_github
+echo "# H2ODemo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:cfalguiere/H2ODemo.git
+git push -u origin master
+
+http://localhost:54321/flow/index.html
+
+conda create --name h2odemo python=2.7
+source activate h2odemo
+conda install pandas numpy scipy matplotlib statsmodels seaborn
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+jupyter notebook
+http://localhost:8888/tree#

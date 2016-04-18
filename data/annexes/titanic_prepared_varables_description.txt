@@ -1,0 +1,4 @@
+   1     Class (0=crew, 1=first, 2 = second, 3 = third)
+  10     Age   (1 = adult, 0 = child)
+  19     Sex   (1 = male, 0 = female)
+  28     Survived (1 = yes, 0 = no)
